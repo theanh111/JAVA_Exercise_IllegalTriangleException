@@ -17,7 +17,7 @@ public class Main {
             Double sum2 = secondSide + thirdSide;
             Double sum3 = firstSide + thirdSide;
 
-            if (firstSide < 0 || secondSide < 0 || thirdSide < 0 || sum1 <= thirdSide || sum2 <= firstSide || sum3 <= secondSide) {
+            if (firstSide <= 0 || secondSide <= 0 || thirdSide <= 0 || sum1 <= thirdSide || sum2 <= firstSide || sum3 <= secondSide) {
                 throw new IllegalTriangleException();
             } else {
                 System.out.println("3 side is accpected!");
